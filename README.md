@@ -410,17 +410,6 @@ product.IsAvailable = product.Quantity > 0;
 
 Run SQL Server using Docker:
 
-```bash
-docker run \
-  -e "ACCEPT_EULA=Y" \
-  -e "MSSQL_SA_PASSWORD=Sql@123456" \
-  -p 1433:1433 \
-  --name dotnet8-sqlserver \
-  -v dotnet8-sql-data:/var/opt/mssql \
-  -d \
-  mcr.microsoft.com/mssql/server:2022-latest
-```
-
 Check whether the container is running:
 
 ```bash
@@ -445,13 +434,6 @@ docker stop dotnet8-sqlserver
 
 The connection string is configured in `appsettings.json`.
 
-```json
-{
-  "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost,1433;Database=DotNet8LearningDb;User Id=sa;Password=YOUR_PASSWORD;TrustServerCertificate=True;"
-  }
-}
-```
 
 For production applications, do not store passwords directly in source control. Use environment variables, user secrets, or a secure secret-management service.
 
