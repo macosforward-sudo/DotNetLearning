@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "HpazGZ9TGDjx4oGQSIy/kXm7LB/+8xcgS1FbDQgrqIs=",
+  "Source": "DotNet8Learning.Api",
+  "BasePath": "_content/DotNet8Learning.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
